@@ -6,17 +6,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login">
    <children>
-      <TextField layoutX="205.0" layoutY="102.0" />
-      <TextField layoutX="205.0" layoutY="175.0" />
-      <Button layoutX="233.0" layoutY="245.0" mnemonicParsing="false" text="Se Connecter" />
+      <TextField fx:id="login" layoutX="205.0" layoutY="102.0" />
+      <TextField fx:id="pass" layoutX="205.0" layoutY="175.0" />
+      <Button layoutX="233.0" layoutY="245.0" mnemonicParsing="false" onAction="#pressLogin" text="Se Connecter" />
       <Label layoutX="79.0" layoutY="106.0" text="Username :" />
       <Label layoutX="79.0" layoutY="179.0" text="Password :" />
       <Label layoutX="199.0" layoutY="24.0" text="Connexion">
          <font>
             <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorlabel" layoutX="428.0" layoutY="127.0" text="ERROR !" textFill="#dd1e1e" visible="false">
+         <font>
+            <Font size="36.0" />
          </font>
       </Label>
    </children>
