@@ -26,5 +26,6 @@
       <Button fx:id="modifier" layoutX="243.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchtomodifier" prefHeight="25.0" prefWidth="88.0" text="Modifier" />
       <Button fx:id="supprimer" layoutX="445.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchtosupprimer" prefHeight="25.0" prefWidth="88.0" text="Supprimer" />
       <Button fx:id="retour" layoutX="472.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="88.0" text="Retour" />
+      <Label layoutX="22.0" layoutY="18.0" text="Liste des Reveus/dépenses" />
    </children>
 </AnchorPane>
