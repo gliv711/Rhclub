@@ -34,6 +34,8 @@ public class ajoutRDController {
     private Label label2;
     @FXML
     private Label label3;
+    @FXML
+    private Label label4;
 
     @FXML
     void retour(ActionEvent event) throws IOException {
@@ -48,6 +50,9 @@ public class ajoutRDController {
 
         if (montantd.getText().isEmpty()) {
             label2.setVisible(true);
+        }
+        if (description.getText().isEmpty()) {
+            label4.setVisible(true);
         }
 
 

@@ -23,9 +23,9 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <Button layoutX="65.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Ajouter" />
-      <Button layoutX="243.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Modifier" />
-      <Button layoutX="445.0" layoutY="357.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Supprimer" />
+      <Button fx:id="ajouter" layoutX="65.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchToajouter" prefHeight="25.0" prefWidth="88.0" text="Ajouter" />
+      <Button fx:id="modifier" layoutX="243.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchTomodifier" prefHeight="25.0" prefWidth="88.0" text="Modifier" />
+      <Button fx:id="supprimer" layoutX="445.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchTosupprimer" prefHeight="25.0" prefWidth="88.0" text="Supprimer" />
       <Button fx:id="retour" layoutX="472.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="88.0" text="Retour" />
    </children>
 </AnchorPane>

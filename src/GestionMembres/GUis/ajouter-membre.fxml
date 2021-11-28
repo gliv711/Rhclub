@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Membre.GUis.AjouterMembreController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionMembres.GUis.AjouterMembreController">
    <children>
       <Label layoutX="189.0" layoutY="51.0" text="Nom :" />
       <TextField id="name" fx:id="name" layoutX="235.0" layoutY="47.0" />
@@ -35,15 +35,17 @@
          </items>
       </SplitMenuButton>
       <Label layoutX="185.0" layoutY="222.0" text="Type" />
-      <Button layoutX="191.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Valider" />
-      <Button layoutX="311.0" layoutY="299.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Annuler" />
+      <Button fx:id="valider" layoutX="191.0" layoutY="299.0" mnemonicParsing="false" onAction="#valider" prefHeight="25.0" prefWidth="100.0" text="Valider" />
+      <Button fx:id="annuler" layoutX="311.0" layoutY="299.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="100.0" text="Annuler" />
       <Label layoutX="20.0" layoutY="14.0" text="Ajouter Membre :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label disable="true" layoutX="241.0" layoutY="72.0" text="Champ Obligatoire" />
-      <Label disable="true" layoutX="241.0" layoutY="155.0" text="Champ Obligatoire" />
-      <Label disable="true" layoutX="241.0" layoutY="113.0" text="Champ Obligatoire" />
+      <Label fx:id="label1" layoutX="241.0" layoutY="72.0" text="Champ Obligatoire" visible="false" />
+      <Label fx:id="label2" layoutX="241.0" layoutY="113.0" text="Champ Obligatoire" visible="false" />
+      <Label fx:id="label4" layoutX="245.0" layoutY="200.0" text="*Champ obligatoire" visible="false" />
+      <Label layoutX="248.0" layoutY="243.0" text="*Champ obligatoire" visible="false" />
+      <Label fx:id="label3" layoutX="248.0" layoutY="155.0" text="*champ obligatoire" visible="false" />
    </children>
 </AnchorPane>
