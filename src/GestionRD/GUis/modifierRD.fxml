@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="217.0" layoutY="74.0" />
+      <TextField layoutX="217.0" layoutY="131.0" />
+      <TextField layoutX="217.0" layoutY="188.0" />
+      <Label layoutX="103.0" layoutY="79.0" text="Description" />
+      <Label layoutX="88.0" layoutY="136.0" text="Montant Revenus :" />
+      <Label layoutX="91.0" layoutY="193.0" text="Montant dépensé :" />
+      <Label layoutX="113.0" layoutY="240.0" text="Date" />
+      <DatePicker layoutX="217.0" layoutY="235.0" />
+      <Button layoutX="182.0" layoutY="322.0" mnemonicParsing="false" text="Valider" />
+      <Button layoutX="357.0" layoutY="322.0" mnemonicParsing="false" text="Annuler" />
+   </children>
+</AnchorPane>

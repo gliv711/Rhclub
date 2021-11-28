@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionRD.GUis.GestionRDController">
+   <children>
+      <TableView layoutX="50.0" layoutY="48.0" prefHeight="309.0" prefWidth="500.0">
+        <columns>
+          <TableColumn prefWidth="173.0" text="Description" />
+          <TableColumn prefWidth="105.0" text="Revenus" />
+            <TableColumn prefWidth="91.0" text="Dépense" />
+            <TableColumn prefWidth="130.0" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="50.0" layoutY="14.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouter" layoutX="65.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchtoajouter" prefHeight="25.0" prefWidth="88.0" text="Ajouter" />
+      <Button fx:id="modifier" layoutX="243.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchtomodifier" prefHeight="25.0" prefWidth="88.0" text="Modifier" />
+      <Button fx:id="supprimer" layoutX="445.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchtosupprimer" prefHeight="25.0" prefWidth="88.0" text="Supprimer" />
+      <Button fx:id="retour" layoutX="472.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="88.0" text="Retour" />
+   </children>
+</AnchorPane>
