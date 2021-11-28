@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="122.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GestionMembres.GUis.GestionMembresController">
    <children>
       <Label layoutX="31.0" layoutY="28.0" text="Confimer la supprésion ?">
          <font>
@@ -14,6 +13,6 @@
          </font>
       </Label>
       <Button layoutX="34.0" layoutY="83.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Oui" />
-      <Button layoutX="264.0" layoutY="83.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Non" />
+      <Button fx:id="retour" layoutX="264.0" layoutY="83.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="128.0" text="Non" />
    </children>
 </AnchorPane>
