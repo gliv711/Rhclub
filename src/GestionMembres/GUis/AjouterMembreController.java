@@ -1,5 +1,7 @@
 package GestionMembres.GUis;
 
+import GestionMembres.Modules.Membre;
+import GestionMembres.Services.MembreServices;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -34,10 +36,18 @@ public class AjouterMembreController {
 @FXML
     public void valider(){
     if (name.getText().isEmpty()) label1.setVisible(true);
+    else
+
     if (lastname.getText().isEmpty()) label2.setVisible(true);
-    if (telephone.getText().isEmpty()) label3.setVisible(true);
-    if (email.getText().isEmpty()) label4.setVisible(true);
+    else
+
+    if (telephone.getText().isEmpty()) label3.setVisible(true);else
+    if (email.getText().isEmpty()) label4.setVisible(true);else
     if (type.getText().isEmpty()) label5.setVisible(true);
+    else {
+        Membre m = new Membre(name.getText(), lastname.getText(), telephone.getText(), email.getText());
+        MembreServices.ajouter(m);
+    }
 }
 @FXML
     void retour(ActionEvent event) throws IOException {

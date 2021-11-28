@@ -1,4 +1,4 @@
-package com.example.lgc.GestionMembres.Modules;
+package GestionMembres.Modules;
 
 public class Membre {
         private int id;
@@ -25,6 +25,14 @@ public class Membre {
             this.email=email;
             this.type=type;
         }
+    public Membre(String name, String lastname,String telephone,String email)
+    {
+        this.name=name;
+        this.lastname=lastname;
+        this.telephone=telephone;
+        this.email=email;
+        this.type=type;
+    }
 
         public void setId(int id) {
             this.id = id;

@@ -31,6 +31,7 @@ public class login {
         stage.setScene(new Scene(root1));
         stage.show();
     }
+
     public void pressLogin(ActionEvent event) {
         String query = "select count(*) from users where login like '" + login.getText() + "' and pass like '" + pass.getText() + "'";
         try {
