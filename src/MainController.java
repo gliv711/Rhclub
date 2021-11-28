@@ -17,6 +17,7 @@ private Scene scene ;
     private Button deconnecter ;
 
 
+
 @FXML
     public void switchTomembres() throws IOException {
     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("GestionMembres/GUis/membre-list.fxml"));
@@ -44,6 +45,8 @@ private Scene scene ;
         stage.setScene(new Scene(root1));
         stage.show();
     }
+
+
 
 
 

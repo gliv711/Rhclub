@@ -24,6 +24,8 @@ public class login {
     @FXML
     private Label errorlabel ;
     @FXML
+    private Label signup ;
+    @FXML
     public void switchToMainMenu() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Menu/GUis/menu.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
@@ -51,5 +53,13 @@ public class login {
         } catch (SQLException | IOException throwables) {
             throwables.printStackTrace();
         }
+    }
+    @FXML
+    public void signup() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("signup.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root1));
+        stage.show();
     }
 }
