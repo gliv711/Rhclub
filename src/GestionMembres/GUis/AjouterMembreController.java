@@ -6,7 +6,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.SplitMenuButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -22,7 +21,7 @@ public class AjouterMembreController {
     @FXML
     private TextField name,lastname,telephone,email ;
     @FXML
-    private SplitMenuButton type;
+    private TextField type;
     @FXML
     private Label label1 ;
     @FXML
@@ -34,7 +33,7 @@ public class AjouterMembreController {
     @FXML
     private Label label5 ;
 @FXML
-    public void valider(){
+    public void valider(ActionEvent event){
     if (name.getText().isEmpty()) label1.setVisible(true);
     else
 
@@ -44,9 +43,11 @@ public class AjouterMembreController {
     if (telephone.getText().isEmpty()) label3.setVisible(true);else
     if (email.getText().isEmpty()) label4.setVisible(true);else
     if (type.getText().isEmpty()) label5.setVisible(true);
+
     else {
-        Membre m = new Membre(name.getText(), lastname.getText(), telephone.getText(), email.getText());
+        Membre m = new Membre(name.getText(), lastname.getText(), telephone.getText(), email.getText(), type.getText());
         MembreServices.ajouter(m);
+        ((Stage) (((Button) event.getSource()).getScene().getWindow())).close();
     }
 }
 @FXML

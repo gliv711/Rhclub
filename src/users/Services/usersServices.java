@@ -16,7 +16,7 @@ public class usersServices {
             Connection connection = getMysqlConnection();
             Statement statement = connection.createStatement();
             statement.executeUpdate("INSERT INTO users(login,pass)" + "VALUES('" + u.getLogin() + "','" + u.getPass() + "')");
-            System.out.println("Inserted");
+            System.out.println("User Inserted");
 
 
         } catch (SQLException throwables) {
